@@ -46,7 +46,7 @@ function createList(data) {
             cheename1 = document.createElement('div')
             cheename1.setAttribute('class', 'name');
     
-                if (myRank !== element[0]) {
+                if (myRank != element[0]) {
                 cheename1Txt = document.createTextNode(element[1])
                 }
                 else{
