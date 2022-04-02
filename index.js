@@ -46,13 +46,14 @@ function createList(data) {
             cheename1 = document.createElement('div')
             cheename1.setAttribute('class', 'name');
     
-                if (myRank != element[0]) {
-                cheename1Txt = document.createTextNode(element[1])
-                }
-                else{
+                if (myRank = element[0]) {
                 cheename1Txt = document.createTextNode('You')
                 cheename1.style.fontWeight = 'bolder'
                 container.style.backgroundColor = '#F4F2F7'
+                
+                }
+                else{
+                cheename1Txt = document.createTextNode(element[1])
                 }
                 cheename1.appendChild(cheename1Txt)
                 
