@@ -1,12 +1,11 @@
 list = document.getElementById('list');
 
 myRank = 4;
-data = [[1, "CHEE2433", 500], [2, "CHEE2433", 500], [3, "CHEE2433", 500], [ 4, "CHEE2433", 500], [5, "CHEE2433", 500], [6, "CHEE2433", 500], [7, "CHEE2433", 500], [8, "CHEE2433", 500], [9, "CHEE2433", 500], [10, "CHEE2433", 500]]
+data = [[1, "CHEE1234", 500], [2, "CHEE1234", 500], [3, "CHEE1234", 500], [ 4, "CHEE1234", 500], [5, "CHEE1234", 500], [6, "CHEE1234", 500], [7, "CHEE1234", 500], [8, "CHEE1234", 500], [9, "CHEE1234", 500], [10, "CHEE1234", 500]]
 
 function createList(data) {
 
     list.innerHTML = ``;
-
 
 
     data.forEach(element => {
@@ -46,14 +45,13 @@ function createList(data) {
             cheename1 = document.createElement('div')
             cheename1.setAttribute('class', 'name');
     
-                if (myRank = element[0]) {
+                if (myRank !== element[0]) {
+                cheename1Txt = document.createTextNode(element[1])
+                }
+                else{
                 cheename1Txt = document.createTextNode('You')
                 cheename1.style.fontWeight = 'bolder'
                 container.style.backgroundColor = '#F4F2F7'
-                
-                }
-                else{
-                cheename1Txt = document.createTextNode(element[1])
                 }
                 cheename1.appendChild(cheename1Txt)
                 
