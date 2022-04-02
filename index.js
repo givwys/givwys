@@ -5,6 +5,10 @@ data = [[1, "CHEE2433", 500], [2, "CHEE2433", 500], [3, "CHEE2433", 500], [ 4, "
 
 function createList(data) {
 
+    list.innerHTML = ``;
+
+
+
     data.forEach(element => {
         
     
